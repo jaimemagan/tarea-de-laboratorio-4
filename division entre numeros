@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace std;
+int divisor (int numerador,int denominador);
+
+int main(){
+    int numerador;
+    int denominador;
+    cout<<"digite el numerador"<<"/n";
+    cin>>numerador;
+    cout<<"digite el denominador"<<"/n";
+    cin>>denominador;
+    if (divisor(numerador,denominador)>0)
+    {
+        cout<<"el numero"<<numerador<<"no es divisible entre"<<denominador;
+    }else
+    {
+        cout<<"el numero"<<numerador<<"si es divisible entre"<<denominador;
+    }
+    system("pause");
+    return 0;
+}
+
+int divisor (int numerador,int denominador){
+    
+if(numerador<denominador)
+{
+    return numerador;
+}else 
+{
+    return divisor(numerador-denominador,denominador);
+}
+}

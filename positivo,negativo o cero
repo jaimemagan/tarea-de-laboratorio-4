@@ -1,0 +1,23 @@
+
+#include <stdio.h>
+ 
+ 
+int main(){
+ 
+ 
+ float numero;
+ 
+ printf("Introduce un numero : ");
+ scanf( "%g", &numero );
+ 
+ if( numero < 0 ){
+ printf("El numero %g es negativo.\n\n", numero);
+ }
+ else if( numero > 0 ){
+ printf("El numero %g es positivo.\n\n", numero);
+ }
+ else{
+ printf("El numero %g es un cero.\n\n", numero);
+ };
+ 
+};

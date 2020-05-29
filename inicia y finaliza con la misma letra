@@ -1,0 +1,27 @@
+#include <iostream>
+#include <string.h>
+using namespace std;
+
+int main(void)
+{
+    char palabra;
+    string imput;
+    cout<<"verificar si la palabra inicia y finaliza con la misma letra"<<endl<<endl;
+    
+    cout<<"ingresar una palabra ";
+    cin>>imput;
+    
+    
+    palabra=imput.length()-1;
+    if (imput[0]==imput[palabra]){
+        
+        cout<<"la palabra si inica y finaliza con la misma letra"<<endl;
+    }
+    
+    else{
+           cout<<"la palabra no inica y finaliza con la misma letra"<<endl;
+           
+           
+    }
+    cout<<endl;
+}
